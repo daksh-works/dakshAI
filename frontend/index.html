@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>DakshAI</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="box">
+            <h2>Welcome User!</h2>
+            <h4>Chat with Daksh</h4>
+            <p>Start by typing something, recording audio, uploading audio or video</p>
+            <form>
+                <textarea placeholder="Ask something to Daksh" style="width: 80%;"></textarea>
+                <button type="submit" style="width: 15%;">Submit</button> <br>
+            </form>
+            <p id="response"></p>
+        </div>
+
+        <div class="box">
+            <h4>Video Analyser</h4>
+            <form class="long-buttons" id="vid-upload">
+                <input type="file" accept="video/mp4" id="videoInput"><br>
+                <button type="submit">Send for Analysis</button>
+            </form>
+            <p id="result"></p>
+        </div>
+
+        <div class="box">
+            <h4>Talk with Audio</h4>
+            <form class="long-buttons" id="audio-upload">
+                <input type="file" accept="audio/mp3" id="audioInput"><br>
+                <button type="submit">Audio Feature</button>
+            </form>
+            <p id="transcribe"></p>
+            <p id="result"></p>
+        </div>
+            
+        <script src="script.js"></script>
+    </body>
+</html>
